@@ -25,7 +25,7 @@ public class Folder {
     @JsonIgnoreProperties({"folders"})
     private User user;
 
-    public Folder(String title, ArrayList<File> files, User user) {
+    public Folder(String title, User user) {
         this.title = title;
         this.files = new ArrayList<File>();
         this.user = user;

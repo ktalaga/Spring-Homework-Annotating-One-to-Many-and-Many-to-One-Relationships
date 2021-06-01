@@ -18,10 +18,10 @@ public class User {
     private String name;
 
     @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
-    @JsonIgnoreProperties({"ship"})
+    @JsonIgnoreProperties({"user"})
     private ArrayList<Folder> folders;
 
-    public User(String name, ArrayList<Folder> folders) {
+    public User(String name) {
         this.name = name;
         this.folders = new ArrayList<Folder>();
     }
